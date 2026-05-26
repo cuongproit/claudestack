@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, Github, Zap } from 'lucide-react';
+import { ArrowRight, Github, Zap, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export function Hero() {
@@ -26,13 +26,18 @@ export function Hero() {
 
           <div className="flex flex-wrap items-center justify-center gap-4 animate-fade-in-up">
             <Button variant="gradient" size="lg" asChild>
-              <Link href="/signup">
-                Start building <ArrowRight className="ml-2 h-4 w-4" />
+              <Link href="/demo">
+                <Sparkles className="mr-2 h-4 w-4" /> Try the live demo
               </Link>
             </Button>
             <Button variant="outline" size="lg" asChild>
               <Link href="https://github.com/cuongproit/claudestack" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2 h-4 w-4" /> Star on GitHub
+              </Link>
+            </Button>
+            <Button variant="ghost" size="lg" asChild>
+              <Link href="/signup">
+                Start building <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>
